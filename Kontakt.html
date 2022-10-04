@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sr-RS">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link href="css/kontaktStyle.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <a href="Index.html" target="_self">Hamburger</a>
+            </div>
+            <div>
+                <a href="ONama.html" target="_self">O nama</a>
+            </div>
+            <div>
+                <a href="Kontakt.html" target="_self">Kontaktirajte nas</a>
+            </div>
+        </header>
+    </div>
+    <form method="post" id="kontakForma">
+        <fieldset>
+            <legend>Ime i prezime</legend>
+            <label for="imeInput">Ime:</label><br>
+            <input type="text" name="ime" id="imeInput"><br>
+
+            <label for="prezimeInput">Prezime:</label><br>
+            <input type="text" name="prezime" id="prezimeInput"><br>
+        </fieldset>
+        <div>
+            <h2>Izaberite gde zelite da jedete:</h2>
+            <input name="zaGde" type="radio" id="ovde" value="ovde" checked="checked">
+            <label for="ovde">Jedem tu</label>
+
+            <input name="zaGde" type="radio" id="dostava" value="dostava">
+            <label for="dostava">Zelim da mi dostavite</label>
+
+            <input name="zaGde" type="radio" id="zaPoneti" value="zaPoneti">
+            <label for="zaPoneti">Za poneti</label>
+            <br>
+            <br>
+            <textarea placeholder="Napomena:" id="napomenaTxtArea"></textarea>
+            <br>
+            <button id="posalji">Posalji</button>
+        </div>
+    </form>
+</body>
+
+</html>

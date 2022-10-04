@@ -1,0 +1,58 @@
+body {
+	background-color: dimgrey;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.aside-left {
+	max-width: 10%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.aside-left img {
+	margin: 1vmax;
+	border-radius: 1vmax;
+	border: 0.5vmax solid transparent;
+}
+
+.aside-right {
+	max-width: 10%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+}
+
+.aside-right img {
+	margin: 1vmax;
+	border-radius: 1vmax;
+	border: 0.5vmax solid transparent;
+}
+
+img:hover {
+	border: 0.5vmax solid white;
+}
+
+.main {
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 2vmax 11vmax 2vmax 11vmax;
+}
+
+#main-span {
+	text-transform: uppercase;
+	font-size: 2.2vmax;
+	font-weight: bolder;
+}
+
+#main-span+p {
+	text-overflow: clip;
+	align-self: center;
+	max-width: 48vmax;
+}

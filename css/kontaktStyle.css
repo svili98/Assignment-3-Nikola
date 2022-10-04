@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: dimgray;
+}
+
+#napomenaTxtArea {
+    width: 40vmax;
+    height: 30vmax;
+    resize: none;
+}
+
+fieldset {
+    width: fit-content;
+    align-self: center;
+}
+
+button,
+textarea,
+input {
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: brown;
+}
+
+#napomenaTxtArea:focus ,input:focus{
+    outline: 1px solid red;
+}
+
+#kontakForma {
+    margin-top: 3vmax;
+}

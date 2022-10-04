@@ -1,0 +1,41 @@
+header {
+	background-color: black;
+	height: 3.5em;
+	display: flex;
+	justify-content: center;
+	border-radius: 1em;
+	font-weight: bold;
+	flex: 1 1 100%;
+}
+
+header div {
+	margin-top: 0.5em;
+	margin-right: 0.5em;
+	flex-direction: row;
+	text-transform: uppercase;
+}
+
+header div a {
+	padding: 0.4em;
+	border-radius: 1em;
+	text-decoration: none;
+	transition: transform ease 0.3s;
+	color: red;
+	display: flex;
+}
+
+header div a:hover {
+	background-color: darkslategrey;
+	font-weight: bolder;
+	transform: translate(0, -4px);
+}
+
+@font-face {
+	font-family: "MyFont";
+	src: url('fonts/AbyssinicaSIL-Regular.ttf');
+}
+
+* {
+	font-size: 1.5vmax;
+	font-family: 'MyFont', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
